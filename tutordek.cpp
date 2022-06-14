@@ -3,6 +3,7 @@
 using namespace std;
 
 int main();
+string nama;
 stack<int> piring;
 int total=0, pilih, n;
 
