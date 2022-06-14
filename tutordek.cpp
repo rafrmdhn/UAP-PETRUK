@@ -3,12 +3,12 @@
 using namespace std;
 
 int main();
-string nama;
 stack<int> piring;
 int total=0, pilih, n;
 
 int pilihan(int pilihan){
     if(pilihan==1){
+        cout<<"PROGRAM TUMPUKAN C++"<<endl;
         cout<<"Masukkan Jumlah Piring : ";
         cin>>n;
         piring.push(n);
@@ -28,10 +28,11 @@ int pilihan(int pilihan){
     }
     return main();
 }
-
-int main(){
-    cout<<"PROGRAM TUMPUKAN C++"<<endl;
+void menu(){
     cout<<"\n1. Tambah Tumpukan\n2. Jumlah Tumpukan\n3. Keluar\nPilihan : ";
+}
+int main(){
+    menu()
     cin>>pilih;
     pilihan(pilih);
 }
