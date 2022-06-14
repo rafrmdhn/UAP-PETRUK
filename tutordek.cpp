@@ -9,7 +9,6 @@ int total=0, pilih, n;
 
 int pilihan(int pilihan){
     if(pilihan==1){
-        cout<<"PROGRAM TUMPUKAN C++"<<endl;
         cout<<"Masukkan Jumlah Piring : ";
         cin>>n;
         piring.push(n);
@@ -31,6 +30,7 @@ int pilihan(int pilihan){
 }
 
 int main(){
+    cout<<"PROGRAM TUMPUKAN C++"<<endl;
     cout<<"\n1. Tambah Tumpukan\n2. Jumlah Tumpukan\n3. Keluar\nPilihan : ";
     cin>>pilih;
     pilihan(pilih);
