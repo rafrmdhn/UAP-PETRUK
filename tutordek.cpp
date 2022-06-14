@@ -8,6 +8,7 @@ int total=0, pilih, n;
 
 int pilihan(int pilihan){
     if(pilihan==1){
+        cout<<"PROGRAM TUMPUKAN PIRING"<<endl;
         cout<<"Masukkan Jumlah Piring : ";
         cin>>n;
         piring.push(n);
