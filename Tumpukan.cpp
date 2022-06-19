@@ -30,7 +30,7 @@ int pilihan(int pilihan){
     }
 }
 void menu(){
-    string menu[4]={"\nPROGRAM TUMPUKAN C++",
+    string menu[4]={"PROGRAM TUMPUKAN C++",
                     "\n1. Tambah Tumpukan\n",
                     "2. Jumlah Tumpukan\n",
                     "3. Keluar\n"};
