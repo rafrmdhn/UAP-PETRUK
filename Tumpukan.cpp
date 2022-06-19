@@ -2,16 +2,12 @@
 #include <stack>
 using namespace std;
 
-int main();
 string nama;
 stack<int> tumpuk;
 int total=0, pilih, n;
 
 int pilihan(int pilihan){
     if(pilihan==1){
-        cout<<"Masukkan nama benda : ";
-        cin.ignore(512,'\n');
-        getline(cin,nama);
         cout<<"Masukkan Jumlah "<<nama<<" : ";
         cin>>n;
         tumpuk.push(n);
@@ -23,7 +19,7 @@ int pilihan(int pilihan){
         for(int i=0;i<=tumpuk.size();i++){
             total+=tumpuk.top();
             tumpuk.pop();
-         }cout<<total;
+         }cout<<total<<endl;
         }
     }
     else if(pilihan==3){
@@ -32,7 +28,6 @@ int pilihan(int pilihan){
     else{
        cout<<"Pilihan anda tidak valid\n";
     }
-    return main();
 }
 void menu(){
     string menu[4]={"\nPROGRAM TUMPUKAN C++",
@@ -45,8 +40,12 @@ void menu(){
 }
 
 int main(){
+	cout<<"Masukkan nama benda yang ingin ditumpuk : ";
+    getline(cin,nama);
     menu();
-    cout<<"Pilihan : ";
-    cin>>pilih;
-    pilihan(pilih);
+    do{
+    	cout<<"Pilihan : ";
+    	cin>>pilih;
+    	pilihan(pilih);
+	}while(pilih!=3);
 }
